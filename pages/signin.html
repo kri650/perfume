@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In | Golden River Perfume</title>
+<meta name="description" content="Sign in to your Golden River Perfume account to manage orders, wishlist, and exclusive member benefits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement">
+  Free Shipping on Orders Above &#8377;1,500 &nbsp;&nbsp;|&nbsp;&nbsp; Use Code GOLDEN20 for 20% Off Your First Order
+</div>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <div class="nav-left">
+    <a href="shop.html">New Arrivals</a>
+    <a href="shop.html">Collections</a>
+    <a href="shop.html?cat=Gift+Sets">Gifting</a>
+    <a href="contact.html">Our Stores</a>
+  </div>
+  <a href="../index.html" class="logo">Golden <span>River</span></a>
+  <div class="nav-right">
+    <a href="signin.html">Sign In</a>
+    <a href="wishlist.html" style="position:relative">Wishlist <span class="wishlist-count" style="display:none">0</span></a>
+    <button class="nav-icon-btn" aria-label="Search">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="7.5" cy="7.5" r="5.5" stroke="#4A3F35" stroke-width="1.2"/><line x1="11.5" y1="11.5" x2="16" y2="16" stroke="#4A3F35" stroke-width="1.2"/></svg>
+    </button>
+    <a href="cart.html" class="nav-icon-btn" style="position:relative">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 1h2.5l2 9h8l2-7H5" stroke="#4A3F35" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="15.5" r="1" fill="#4A3F35"/><circle cx="13.5" cy="15.5" r="1" fill="#4A3F35"/></svg>
+      <span class="cart-count" style="display:none">0</span>
+    </a>
+    <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- SIGN IN SECTION -->
+<section class="signin-section">
+  <div class="signin-visual">
+    <div class="logo" style="font-size:42px;color:#fff;letter-spacing:10px;position:relative;">
+      Golden <span style="color:#C9A96E;">River</span>
+    </div>
+  </div>
+
+  <div class="signin-form-wrap">
+    <h2>Welcome Back</h2>
+    <p>Sign in to your account to access your orders, wishlist, and exclusive offers.</p>
+
+    <form class="signin-form" onsubmit="event.preventDefault(); GRToast.show('Sign in is not available in this demo.'); ">
+      <div class="form-group">
+        <label for="signinEmail">Email Address</label>
+        <input type="email" id="signinEmail" class="form-input" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="signinPassword">Password</label>
+        <input type="password" id="signinPassword" class="form-input" placeholder="Enter your password" required>
+      </div>
+      <div class="form-options">
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+          <input type="checkbox" style="accent-color:#A8813A;"> Remember me
+        </label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn-primary">Sign In</button>
+
+      <div class="divider-line">
+        <span>or continue with</span>
+      </div>
+
+      <div style="display:flex;gap:10px;">
+        <button type="button" class="btn-outline-dark" style="flex:1;text-align:center;" onclick="GRToast.show('Google sign-in is not available in this demo.')">Google</button>
+        <button type="button" class="btn-outline-dark" style="flex:1;text-align:center;" onclick="GRToast.show('Facebook sign-in is not available in this demo.')">Facebook</button>
+      </div>
+    </form>
+
+    <div class="signin-bottom">
+      Don't have an account? <a href="register.html">Create Account</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">Golden <span>River</span></span>
+      <p>India's finest luxury fragrance house.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="shop.html?cat=For+Him">For Him</a></li>
+        <li><a href="shop.html?cat=For+Her">For Her</a></li>
+        <li><a href="shop.html?cat=Attar">Attar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Golden River Perfume Pvt. Ltd. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Instagram">in</a>
+      <a href="#" aria-label="YouTube">yt</a>
+      <a href="#" aria-label="Pinterest">p</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/toast.js"></script>
+<script src="../js/store.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/global.js"></script>
+</body>
+</html>

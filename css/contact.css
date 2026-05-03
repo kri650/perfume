@@ -1,0 +1,160 @@
+/* ═══════════════════════════════════════════════════
+   Golden River — Contact Page Styles
+   ═══════════════════════════════════════════════════ */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+/* ── CONTACT FORM ── */
+.contact-form-wrap {
+  padding: 5rem;
+  background: var(--white);
+}
+.contact-form-wrap h2 {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--ink);
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.contact-form-wrap > p {
+  font-size: 14px;
+  color: var(--ink-light);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.contact-form {
+  margin-top: 1rem;
+}
+.contact-form .btn-primary { margin-top: 0.5rem; }
+
+/* ── CONTACT INFO PANEL ── */
+.contact-info-panel {
+  background: var(--ink);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.contact-info-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image:
+    repeating-linear-gradient(45deg, #C9A96E 0, #C9A96E 1px, transparent 0, transparent 50%);
+  background-size: 20px 20px;
+}
+.contact-info-panel .eyebrow {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.contact-info-panel h3 {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.contact-detail-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.contact-detail-item .cd-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid rgba(168,129,58,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-detail-item .cd-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  display: block;
+  margin-bottom: 4px;
+}
+.contact-detail-item .cd-value {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* ── STORE LOCATIONS ── */
+.stores-section {
+  padding: 6rem 3rem;
+  background: var(--cream);
+}
+.stores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 3rem;
+}
+.store-card {
+  background: var(--white);
+  padding: 2.5rem;
+}
+.store-card h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--ink);
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+.store-card .store-type {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1rem;
+}
+.store-card p {
+  font-size: 13px;
+  color: var(--ink-light);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+.store-card .store-hours {
+  font-size: 12px;
+  color: var(--ink-mid);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .contact-section { grid-template-columns: 1fr; }
+  .contact-form-wrap { padding: 3rem 2rem; }
+  .contact-info-panel { padding: 3rem 2rem; }
+  .stores-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Detail | Golden River Perfume</title>
+<meta name="description" content="Explore the detailed fragrance profile, notes, and sizing options for this Golden River luxury perfume.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement">
+  Free Shipping on Orders Above &#8377;1,500 &nbsp;&nbsp;|&nbsp;&nbsp; Use Code GOLDEN20 for 20% Off Your First Order
+</div>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <div class="nav-left">
+    <a href="shop.html">New Arrivals</a>
+    <a href="shop.html">Collections</a>
+    <a href="shop.html?cat=Gift+Sets">Gifting</a>
+    <a href="contact.html">Our Stores</a>
+  </div>
+  <a href="../index.html" class="logo">Golden <span>River</span></a>
+  <div class="nav-right">
+    <a href="signin.html">Sign In</a>
+    <a href="wishlist.html" style="position:relative">Wishlist <span class="wishlist-count" style="display:none">0</span></a>
+    <button class="nav-icon-btn" aria-label="Search">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="7.5" cy="7.5" r="5.5" stroke="#4A3F35" stroke-width="1.2"/><line x1="11.5" y1="11.5" x2="16" y2="16" stroke="#4A3F35" stroke-width="1.2"/></svg>
+    </button>
+    <a href="cart.html" class="nav-icon-btn" style="position:relative">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 1h2.5l2 9h8l2-7H5" stroke="#4A3F35" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="15.5" r="1" fill="#4A3F35"/><circle cx="13.5" cy="15.5" r="1" fill="#4A3F35"/></svg>
+      <span class="cart-count" style="display:none">0</span>
+    </a>
+    <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- SECONDARY NAV -->
+<nav class="subnav">
+  <a href="../index.html">Home</a>
+  <a href="shop.html?cat=For+Him">For Him</a>
+  <a href="shop.html?cat=For+Her">For Her</a>
+  <a href="shop.html?cat=Unisex">Unisex</a>
+  <a href="shop.html?cat=Attar">Attar</a>
+  <a href="shop.html">Bakhoor</a>
+  <a href="shop.html?cat=Gift+Sets">Gift Sets</a>
+  <a href="shop.html?cat=Sale" class="sale">Sale</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- PRODUCT DETAIL -->
+<section class="product-detail">
+  <!-- Gallery side -->
+  <div class="product-gallery">
+    <div class="product-main-image">
+      <div class="img-placeholder">
+        <svg width="80" height="160" viewBox="0 0 80 160" xmlns="http://www.w3.org/2000/svg">
+          <rect x="28" y="5" width="24" height="22" rx="2" fill="#C9A96E"/>
+          <rect x="22" y="27" width="36" height="12" rx="1" fill="#A8813A"/>
+          <path d="M12 39 Q12 48 8 54 L8 138 Q8 148 40 148 Q72 148 72 138 L72 54 Q68 48 68 39 Z" fill="#A8813A"/>
+        </svg>
+        <span>Product Image</span>
+      </div>
+    </div>
+    <div class="product-thumbnails">
+      <div class="thumb active"><span>Front</span></div>
+      <div class="thumb"><span>Back</span></div>
+      <div class="thumb"><span>Side</span></div>
+      <div class="thumb"><span>Box</span></div>
+    </div>
+  </div>
+
+  <!-- Info side -->
+  <div class="product-detail-info">
+    <div class="pd-breadcrumb">
+      <a href="../index.html">Home</a> / <a href="shop.html">Shop</a> / <a href="shop.html" id="pdCatLink">For Him</a> / <span id="pdBreadName">Noir Oud</span>
+    </div>
+    <div class="pd-category" id="pdType">Woody · Smoky</div>
+    <h1 class="pd-name" id="pdName">Noir Oud</h1>
+    <div class="pd-subtitle" id="pdSubtitle">Eau de Parfum — Handcrafted in Kannauj</div>
+    <div class="pd-rating">
+      <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+      <span>4.9 (128 Reviews)</span>
+    </div>
+    <div class="pd-price" id="pdPrice">
+      <del>₹6,000</del> ₹4,799 <span class="save-tag">Save ₹1,201</span>
+    </div>
+    <div class="pd-divider"></div>
+
+    <div class="pd-sizes">
+      <label>Select Size</label>
+      <div class="size-options" id="sizeOptions">
+        <button class="size-btn" data-size="10ml">10ml</button>
+        <button class="size-btn" data-size="30ml">30ml</button>
+        <button class="size-btn active" data-size="50ml">50ml</button>
+        <button class="size-btn" data-size="100ml">100ml</button>
+      </div>
+    </div>
+
+    <div class="pd-quantity">
+      <label>Quantity</label>
+      <div class="qty-control">
+        <button class="qty-btn" onclick="changeQty(-1)">−</button>
+        <div class="qty-val" id="qtyVal">1</div>
+        <button class="qty-btn" onclick="changeQty(1)">+</button>
+      </div>
+    </div>
+
+    <div class="pd-actions">
+      <button class="btn-primary" id="addToCartBtn">Add to Cart</button>
+      <button class="btn-icon" id="pdWishlistBtn" title="Add to Wishlist">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 14s-5.5-3.5-5.5-7A3.5 3.5 0 0 1 8 4.5 3.5 3.5 0 0 1 13.5 7C13.5 10.5 8 14 8 14z" stroke="#4A3F35" stroke-width="1"/></svg>
+      </button>
+    </div>
+
+    <div class="pd-notes">
+      <div class="pd-note">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#A8813A" stroke-width="1"/></svg>
+        <strong>Free Shipping</strong>
+        <span>Orders above ₹1,500</span>
+      </div>
+      <div class="pd-note">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#A8813A" stroke-width="1"/><path d="M9 12l2 2 4-4" stroke="#A8813A" stroke-width="1" stroke-linecap="round"/></svg>
+        <strong>Authentic</strong>
+        <span>100% genuine product</span>
+      </div>
+      <div class="pd-note">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4zM8 2v4M16 2v4M4 10h16" stroke="#A8813A" stroke-width="1"/></svg>
+        <strong>Easy Returns</strong>
+        <span>7-day return policy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAGRANCE NOTES -->
+<section class="fragrance-section">
+  <div class="section-header">
+    <span class="eyebrow">Olfactive Profile</span>
+    <h2>Fragrance Notes</h2>
+    <div class="divider-gold"></div>
+  </div>
+  <div class="fragrance-pyramid">
+    <div class="frag-level">
+      <span class="level-label">Top Notes</span>
+      <h4>The Opening</h4>
+      <p>Bergamot, Pink Pepper, Cardamom</p>
+    </div>
+    <div class="frag-level">
+      <span class="level-label">Heart Notes</span>
+      <h4>The Heart</h4>
+      <p>Rose Absolute, Saffron, Iris</p>
+    </div>
+    <div class="frag-level">
+      <span class="level-label">Base Notes</span>
+      <h4>The Signature</h4>
+      <p>Oud, Sandalwood, Amber, Musk</p>
+    </div>
+  </div>
+</section>
+
+<!-- YOU MAY ALSO LIKE -->
+<section style="padding:4rem 3rem;background:var(--cream);">
+  <div class="section-header" style="padding-top:0;">
+    <span class="eyebrow">Complete Your Collection</span>
+    <h2>You May Also Like</h2>
+    <div class="divider-gold"></div>
+  </div>
+  <div class="products-grid" id="relatedProducts"></div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <span class="eyebrow">Stay Connected</span>
+  <h2>Join the Inner Circle</h2>
+  <p>Receive early access to new collections, exclusive offers, and perfumery insights.</p>
+  <div class="newsletter-form">
+    <input type="email" placeholder="Your email address">
+    <button>Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">Golden <span>River</span></span>
+      <p>India's finest luxury fragrance house. Handcrafted in Kannauj, inspired by the world.</p>
+      <div class="footer-contact-item"><label>Email</label><span>hello@goldenriverperfume.com</span></div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="shop.html?cat=For+Him">For Him</a></li>
+        <li><a href="shop.html?cat=For+Her">For Her</a></li>
+        <li><a href="shop.html?cat=Attar">Attar</a></li>
+        <li><a href="shop.html?cat=Gift+Sets">Gift Sets</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Golden River Perfume Pvt. Ltd. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Instagram">in</a>
+      <a href="#" aria-label="YouTube">yt</a>
+      <a href="#" aria-label="Pinterest">p</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/toast.js"></script>
+<script src="../js/store.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/global.js"></script>
+<script>
+let currentProduct = null;
+let selectedSize = '50ml';
+let quantity = 1;
+
+// Get product from URL
+const params = new URLSearchParams(window.location.search);
+const productId = params.get('id') || 'noir-oud';
+currentProduct = getProductById(productId);
+
+if (currentProduct) {
+  document.title = `${currentProduct.name} | Golden River Perfume`;
+  document.getElementById('pdName').textContent = currentProduct.name;
+  document.getElementById('pdBreadName').textContent = currentProduct.name;
+  document.getElementById('pdType').textContent = currentProduct.type;
+  document.getElementById('pdCatLink').textContent = currentProduct.category;
+  document.getElementById('pdCatLink').href = `shop.html?cat=${encodeURIComponent(currentProduct.category)}`;
+
+  selectedSize = currentProduct.size;
+
+  // Price
+  let priceHTML = '';
+  if (currentProduct.originalPrice) {
+    const saved = currentProduct.originalPrice - currentProduct.price;
+    priceHTML = `<del>${formatPrice(currentProduct.originalPrice)}</del> ${formatPrice(currentProduct.price)} <span class="save-tag">Save ${formatPrice(saved)}</span>`;
+  } else {
+    priceHTML = formatPrice(currentProduct.price);
+  }
+  document.getElementById('pdPrice').innerHTML = priceHTML;
+
+  // Sizes
+  const sizeContainer = document.getElementById('sizeOptions');
+  sizeContainer.innerHTML = currentProduct.sizes.map(s =>
+    `<button class="size-btn ${s === selectedSize ? 'active' : ''}" data-size="${s}" onclick="selectSize('${s}', this)">${s}</button>`
+  ).join('');
+
+  // Wishlist button state
+  updateWishlistBtn();
+
+  // Related products
+  const related = GRProducts
+    .filter(p => p.category === currentProduct.category && p.id !== currentProduct.id)
+    .slice(0, 4);
+  document.getElementById('relatedProducts').innerHTML = related.map(p => renderProductCard(p)).join('');
+}
+
+function selectSize(size, el) {
+  selectedSize = size;
+  document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function changeQty(delta) {
+  quantity = Math.max(1, quantity + delta);
+  document.getElementById('qtyVal').textContent = quantity;
+}
+
+document.getElementById('addToCartBtn').addEventListener('click', () => {
+  if (!currentProduct) return;
+  GRStore.addToCart({
+    id: currentProduct.id,
+    name: currentProduct.name,
+    category: currentProduct.category,
+    type: currentProduct.type,
+    price: currentProduct.price,
+    originalPrice: currentProduct.originalPrice,
+    size: selectedSize,
+  }, quantity);
+});
+
+document.getElementById('pdWishlistBtn').addEventListener('click', () => {
+  if (!currentProduct) return;
+  GRStore.toggleWishlist(currentProduct);
+  updateWishlistBtn();
+});
+
+function updateWishlistBtn() {
+  const btn = document.getElementById('pdWishlistBtn');
+  const inList = GRStore.isInWishlist(currentProduct.id);
+  btn.classList.toggle('active', inList);
+  const svg = btn.querySelector('svg path');
+  svg.setAttribute('fill', inList ? '#C9A96E' : 'none');
+  svg.setAttribute('stroke', inList ? '#C9A96E' : '#4A3F35');
+}
+
+window.addEventListener('wishlist-updated', updateWishlistBtn);
+</script>
+</body>
+</html>

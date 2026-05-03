@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1F2C" />
+      <stop offset="0.55" stop-color="#2C3A5A" />
+      <stop offset="1" stop-color="#1A2030" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)" />
+  <rect x="70" y="70" width="1140" height="580" fill="none" stroke="#A8813A" stroke-opacity="0.35" stroke-width="2" />
+  <text x="640" y="332" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="56"
+    font-weight="300" fill="#FFFFFF" fill-opacity="0.82">Golden River</text>
+  <text x="640" y="395" text-anchor="middle" font-family="Jost, Arial, sans-serif" font-size="18" letter-spacing="6"
+    fill="#C9A96E" fill-opacity="0.9">VELVET SAFFRON • REEL</text>
+</svg>
+

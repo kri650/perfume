@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════════════
+   Golden River — Shop/Collection Page Styles
+   ═══════════════════════════════════════════════════ */
+
+/* ── FILTER BAR ── */
+.filter-bar {
+  padding: 2rem 3rem;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.filter-tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  padding: 8px 20px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background: none;
+  font-family: var(--sans);
+}
+.filter-tag:hover, .filter-tag.active {
+  background: var(--ink);
+  color: var(--gold-light);
+  border-color: var(--ink);
+}
+.filter-select {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  cursor: pointer;
+  font-family: var(--sans);
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%234A3F35' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+.result-count {
+  font-size: 12px;
+  color: var(--ink-light);
+  letter-spacing: 0.5px;
+}
+
+/* ── SHOP GRID ── */
+.shop-section {
+  padding: 3rem;
+  background: var(--cream);
+}
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.shop-grid .product-card {
+  background: var(--white);
+  transition: box-shadow var(--transition-med);
+}
+.shop-grid .product-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+.shop-grid .product-info {
+  padding: 1rem 1.2rem 1.5rem;
+}
+
+/* ── PAGINATION ── */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 3rem 0 1rem;
+}
+.page-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--ink-mid);
+  font-family: var(--sans);
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+.page-btn:hover, .page-btn.active {
+  background: var(--ink);
+  color: var(--gold-light);
+  border-color: var(--ink);
+}
+.page-btn.nav-btn {
+  width: auto;
+  padding: 0 16px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .shop-section { padding: 2rem 1.5rem; }
+  .shop-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .filter-bar { padding: 1.5rem; }
+  .filter-group { flex-wrap: wrap; gap: 0.75rem; }
+}
+@media (max-width: 600px) {
+  .shop-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .filter-bar { flex-direction: column; align-items: flex-start; }
+}
